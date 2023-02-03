@@ -8,16 +8,82 @@ body{
     font-family: 'EB Garamond', serif;
     margin: 0;
     border-style: none;
-    /* background-image: url(media/background.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%; */
+    background: url(media/background.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-/* .center{
-    font-family: 'EB Garamond', serif;
+h1{
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 9px 3px 5px antiquewhite;
 }
+
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: large;
+    margin-left: 5px;
+    text-shadow: 8px 3px 5px antiquewhite;
+}
+nav li{
+    display: inline;
+}
+
 .center table{
-    position: relative;
-    margin: ;
-    align-items: center;
-} */
+    width: 75%;
+    margin: auto;
+}
+.center textarea{
+    font-family: 'EB Garamond', serif;
+    font-size: large;
+    font-weight: 500;
+    height: 375px;
+    width: 1075px;
+    background-image: url(media/paper.jpeg);
+    background-size: 100%;
+}
+
+input{
+    background-image: url(media/paper.jpeg);
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    margin: auto;
+}
+
+.about{
+    text-align: center;
+    color: black;
+    padding: 2px;
+    background-image: url(media/paper.jpeg);
+    background-size: 100%;
+    margin: 30px;
+    font-weight: 600;
+}
+
+.transcript{
+    text-align: center;
+    color: black;
+    padding: 2px;
+    background-image: url(media/paper.jpeg);
+    background-size: 100%;
+    margin: 30px 180px;
+    font-weight: 600;
+}
+.transcript a{
+    text-decoration: none;
+    color: black;
+}
+.transcript a:hover{
+    text-decoration: underline;
+}

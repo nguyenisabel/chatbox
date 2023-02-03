@@ -322,8 +322,8 @@ var elizaKeywords = [
      "The true perfection of a person lies not in what they have, but in what they are. What would obtaining (3) mean to you?"
   ]],
  ["* i am* @sad *", [
-     "I am sorry to hear that you are (3). You must wish, as well as everybody else, to be perfectly happy; but, like everybody else, it must be in your own way",
-     "Do you think coming here will help you not to be (3), dear friend?",
+     "I am sorry to hear that you are (3). You must wish, as well as everybody else, to be perfectly happy; but, like everybody else, it must be in your own way.",
+     "Do you believe that coming here will help you not to be (3), dear friend?",
      "I am positive that it is not pleasant to be (3).",
      "Can you elaborate on what made you (3), dear friend?"
   ]],
@@ -387,16 +387,16 @@ var elizaKeywords = [
      "goto alike"
   ]],
  ["* you are *", [
-     "What makes you believe that I am (2)?",
+     "What makes you believe that I am (2), dear friend?",
      "Does it please you to believe that I am (2)?",
      "Do you sometimes wish you were (2), dear friend?",
      "Perhaps, dear friend, you would like to be (2)."
   ]],
  ["* you* me *", [
-     "Why must you believe that I (2) you ?",
+     "Why must you believe that I (2) you?",
      "You like to believe that I (2) you -- don't you?",
      "What makes you believe that I (2) you?",
-     "In all seriousness, I (2) you ?",
+     "In all seriousness, I (2) you?",
      "Do you wish to believe I (2) you, dear friend?",
      "Suppose I did (2) you -- what would that mean?",
      "I must ask you now, does someone else believe I (2) you?"
@@ -441,14 +441,14 @@ var elizaKeywords = [
      "But your (2). You must elabortate further."
   ]],
  ["* my* @family *", [
-     "Tell me more about your family.",
+     "You must tell me more about your family.",
      "Who else in your family (4)? There are people, who the more you do for them, the less they will do for themselves.",
      "Your (3)? Dear friend, please tell me if so.",
      "What else comes to your mind when you think of your (3)?"
   ]],
  ["* my *", [
-     "Your (2)?",
      "Dear friend, why do you say your (2)?",
+     "Your (2)?",
      "Does that suggest anything else which belongs to you?",
      "Is it of most importance to you that your (2)?"
   ]]
@@ -557,7 +557,7 @@ var elizaKeywords = [
 ]],
 ["always", 1, [
  ["*", [
-     "Can you think of a specific example?",
+     "May I ask, can you think of a specific example?",
      "When did this occur, dear friend?",
      "May I ask, what incident are you thinking of?",
      "Truly, always ?"
@@ -565,7 +565,7 @@ var elizaKeywords = [
 ]],
 ["alike", 10, [
  ["*", [
-     "In which way?",
+     "In which way, dear friend?",
      "What resemblence do you see at present?",
      "What does that similarity suggest to you?",
      "What other connections do you see?",

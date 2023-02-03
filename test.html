@@ -1,0 +1,136 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Elizabeth Bennet Test Chat</TITLE>
+	<link rel="stylesheet" href="style.css">
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT>
+
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		
+		// initialize with argument 'true': no random choices
+		var eliza = new ElizaBot(true);
+		
+		var exampleLines= [
+		"Men are all alike.",
+		"They're always bugging us about something or other.",
+		"Well, my boyfriend made me come here.",
+		"He says I'm depressed much of the time.",
+		"It's true. I am unhappy.",
+		"I need some help, that much seems certain.",
+		"Perhaps I could learn to get along with my mother.",
+		"My mother takes care of me.",
+		"My father.",
+		"You are like my father in some ways.",
+		"You are not very aggressive but I think you don't want me to notice that.",
+		"You don't argue with me.",
+		"You are afraid of me.",
+		"My father is afraid of everybody.",
+		"Bullies."
+		];
+		
+		var exampleCursor=0;
+		
+		function elizaReset() {
+			eliza.reset();
+			exampleCursor=0;
+		}
+		
+		function elizaNext() {
+			if (exampleCursor >= exampleLines.length) {
+				alert('Last entry reached.\nClick "Reset" to start over again.');
+				return;
+			}
+			var userinput = exampleLines[exampleCursor++];
+			document.forms.eform.edisplay.value += 'USER:  ' + userinput + '\n';
+			document.forms.eform.edisplay.value += 'ELIZABETH: ' + eliza.transform(userinput) + '\n';
+		}
+		
+		//-->
+	</SCRIPT>
+</HEAD>
+
+<BODY TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0" STYLE="border:0"><A
+		NAME="top"></A>
+
+	<div class="center">
+		<P>&nbsp;</P>
+		<H1>Elizabeth Bennet Test Chat</H1>
+		<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
+			<FORM NAME="eform" onsubmit="return false">
+				<TR VALIGN="top">
+					<TD>
+						<TEXTAREA NAME="edisplay" COLS="60" ROWS="20"></TEXTAREA>
+					</TD>
+				</TR>
+				<tr>
+					<TD ALIGN="center">
+						<INPUT TYPE="button" VALUE="Next Step" onclick="elizaNext()" size="50">
+						<INPUT TYPE="reset" VALUE="Reset" onclick="elizaReset(); return true" size="50">
+					</TD>
+				</TR>
+			</FORM>
+		</TABLE>
+	</div>
+
+	<P>&nbsp;</P>
+	<div class="transcript">
+		<p>
+			This is a test application for the <a href="index.html">Elizabeth Bennet Chatbot</a>.
+			<br><br>
+			The test application is based upon the original example given by Joseph Weizenbaum in his article on ELIZA from Jannuary 1966 <A HREF="#ELIZA">[1]</A>.
+			<br>
+			Click &quot;Next Step&quot; to see the next input and Elizabeth's answer. 
+			<br>	
+			Click &quot;Reset&quot; to reset the chatbot and the display form.
+			<br><br><br>
+			<i>Here is a transcript of the conversation shown.
+				<br>The capitalized lines are Elizabeth's responses.</i>
+			<br><br>
+				Men are all alike.<BR><BR>
+				IN WHICH WAY, DEAR FRIEND?<BR><BR>
+				They're always bugging us about something or other.<BR><BR>
+				MAY I ASK, CAN YOU THINK OF A SPECIFIC EXAMPLE?<BR><BR>
+				Well, my boyfriend made me come here.<BR><BR>
+				DEAR FRIEND, WHY DO YOU SAY YOUR BOYFRIEND MADE YOU COME HERE?<BR><BR>
+				He says I'm depressed much of the time.<BR><BR>
+				I AM SORRY TO HEAR YOU ARE DEPRESSED. YOU MUST WISH, AS WELL AS EVERYBODY ELSE, TO BE PERFECTLY HAPPY; BUT, LIKE EVERYBODY ELSE, IT MUST BE IN YOUR OWN WAY.<BR><BR>
+				It's true.<BR>
+				I am unhappy.<BR><BR>
+				DO YOU BELIEVE THAT COMING HERE WILL HELP YOU NOT TO BE UNHAPPY, DEAR FRIEND?<BR><BR>
+				I need some help, that much seems certain.<BR><BR>
+				THE TRUE PERFECTION OF A PERSON LIES NOT IN WHAT THEY HAVE, BUT WHAT THEY ARE.
+				<BR>
+				WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP?<BR><BR>
+				Perhaps I could learn to get along with my mother.<BR><BR>
+				YOU MUST TELL ME MORE ABOUT YOUR FAMILY.<BR><BR>
+				My mother takes care of me.<BR><BR>
+				WHO ELSE IN YOUR FAMILY TAKES CARE OF YOU? THERE ARE PEOPLE, WHO THE MORE YOU DO FOR THEM, <BR>
+				THE LESS THEY WILL DO FOR THEMSELVES.<BR><BR>
+				My father.<BR><BR>
+				YOUR FATHER? DEAR FRIEND, PLEASE TELL ME IF SO.<BR><BR>
+				You are like my father in some ways.<BR><BR>
+				WHAT RESEMBLANCE DO YOU SEE AT PRESENT?<BR><BR>
+				You are not very aggressive<BR>
+				but I think you don't want me to notice that.<BR><BR>
+				WHAT MAKES YOU BELIEVE THAT I AM NOT VERY AGGRESSIVE, DEAR FRIEND?<BR><BR>
+				You don't argue with me.<BR><BR>
+				WHY MUST YOU BELIEVE THAT I DON'T ARGUE WITH YOU?<BR><BR>
+				You are afraid of me.<BR><BR>
+				DOES IT PLEASE YOU TO BELIEVE I AM AFRAID OF YOU?<BR><BR>
+				My father is afraid of everybody.<BR><BR>
+				WHAT ELSE COMES TO YOUR MIND WHEN YOU THINK OF YOUR FATHER?<BR><BR>
+				Bullies.<BR><BR>
+				DEAR FRIEND, DOES THAT HAVE ANYTHING TO DO WITH THE FACT<BR>
+				THAT YOUR BOYFRIEND MADE YOU COME HERE?<BR><br><br>
+		</p>
+			References: <A NAME="ELIZA"></A>[1] 
+			<br>
+			Weizenbaum, Joseph &quot;ELIZA &#150; A Computer Program For the Study of Natural Language
+				Communication Between Man and Machine&quot;<BR>
+				in: Communications of the ACM; Volume 9 , Issue 1 (January 1966): p 36-45.
+				<br><br>
+</BODY>
+
+</HTML>
