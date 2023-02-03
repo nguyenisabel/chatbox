@@ -1,10 +1,10 @@
 <HTML>
 <HEAD>
-	<TITLE>Eliza (elizabot.js)</TITLE>
+	<TITLE>Chat with Elizabeth Bennet</TITLE>
+  <link rel="stylesheet" href="style.css">
 	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></SCRIPT>
 	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT>
-
-<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+  <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
 <!--
 
 var eliza = new ElizaBot();
@@ -30,7 +30,7 @@ function elizaStep() {
 	}
 	else if (userinput != '') {
 		var usr = 'YOU:   ' + userinput;
-		var rpl ='ELIZA: ' + eliza.transform(userinput);
+		var rpl ='ELIZABETH: ' + eliza.transform(userinput);
 		elizaLines.push(usr);
 		elizaLines.push(rpl);
 		// display nicely
@@ -47,7 +47,7 @@ function elizaStep() {
 	}
 	else if (elizaLines.length == 0) {
 		// no input and no saved lines -> output initial
-		var initial = 'ELIZA: ' + eliza.getInitial();
+		var initial = 'ELIZABETH: ' + eliza.getInitial();
 		elizaLines.push(initial);
 		f.e_display.value = initial + '\n';
 	}
@@ -59,21 +59,27 @@ function elizaStep() {
 </SCRIPT>
 </HEAD>
 
-<BODY TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0" STYLE="border:0" onload="window.setTimeout('elizaReset()',100)"><A NAME="top"></A>
+<BODY onload="window.setTimeout('elizaReset()',100)">
 
-<CENTER>
-<P>&nbsp;</P>
-<H3>Eliza</H3>
-<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
-<FORM NAME="e_form" onsubmit="elizaStep();return false">
-<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
-<TR VALIGN="middle">
-	<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
-	<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
-</TR>
-</FORM>
-</TABLE>
-</CENTER>
+  <A NAME="top"></A>
+
+  <div class="center">
+    <P>&nbsp;</P>
+    <H3>Elizabeth Bennet</H3>
+    <TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
+      <FORM NAME="e_form" onsubmit="elizaStep();return false">
+        <TR>
+          <TD COLSPAN="2">
+            <TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA>
+          </TD>
+        </TR>
+          <TR VALIGN="middle">
+            <TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
+            <TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
+        </TR>
+      </FORM>
+    </TABLE>
+  </div>
 
 <P>&nbsp;</P>
 <P ALIGN="center">For a comfortable terminal-like interface see the <A HREF="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</A>.</P>
